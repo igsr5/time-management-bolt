@@ -1,6 +1,6 @@
 import { App } from "@slack/bolt";
 import dotenv from "dotenv";
-import { echo } from "./cmd/echo";
+import { start } from "./cmd/start";
 
 dotenv.config();
 const config = {
@@ -9,7 +9,7 @@ const config = {
 };
 
 const app = new App(config);
-app.command("/echo",echo);
+app.command("/start", start);
 
 app.start(3000);
 console.log(`⚡️ Bolt app is running!`);
