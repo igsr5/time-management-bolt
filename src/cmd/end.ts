@@ -1,5 +1,6 @@
 import { SlackCommandMiddlewareArgs } from "@slack/bolt";
 import { AxiosClient } from "../axios";
+import { Authenticate } from "../common/authentication";
 import { CreateTimePointParam } from "../time_point/time_point";
 
 export const end = async ({
@@ -10,6 +11,8 @@ export const end = async ({
 }: SlackCommandMiddlewareArgs) => {
   try {
     await ack();
+
+    Authenticate(command);
 
     const params: CreateTimePointParam = { status: "end" };
     await AxiosClient.post("/time_points", params);
