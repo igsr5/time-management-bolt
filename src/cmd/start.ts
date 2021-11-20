@@ -1,5 +1,6 @@
 import { SlackCommandMiddlewareArgs } from "@slack/bolt";
 import { AxiosClient } from "../axios";
+import { Authenticate } from "../common/authentication";
 import { CreateTimePointParam } from "../time_point/time_point";
 
 export const start = async ({
@@ -11,6 +12,8 @@ export const start = async ({
   try {
     await ack();
 
+    Authenticate(command);
+
     const params: CreateTimePointParam = { status: "start" };
     await AxiosClient.post("/time_points", params);
 
@@ -20,7 +23,7 @@ export const start = async ({
     console.error(err);
 
     await respond({
-      text: `failed start. err: ${err.response.data}`,
+      text: `failed start. err: ${err.message}`,
       response_type: "ephemeral",
     });
   }
