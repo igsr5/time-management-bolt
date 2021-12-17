@@ -17,4 +17,4 @@ app.command("/end", end);
 app.command("/times", times);
 
 app.start(parseInt(PORT));
-console.log(`⚡️ Bolt app is running!`);
+console.log(`⚡️ Bolt app is running!: ${PORT}`);
