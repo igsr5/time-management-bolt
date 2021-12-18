@@ -25,7 +25,8 @@ const config = {
   token: process.env.BOT_USER_OAUTH_TOKEN,
   signingSecret: process.env.SIGNING_SECRET,
   appToken: process.env.APP_TOKEN,
-  developerMode:true,
+  socketMode: true,
+  logLevel: "debug",
   // receiver,
 };
 

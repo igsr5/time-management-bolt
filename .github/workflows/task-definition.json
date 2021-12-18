@@ -168,7 +168,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:799705073177:task-definition/igsr5_time_management_slack:16",
+  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:799705073177:task-definition/igsr5_time_management_slack:17",
   "family": "igsr5_time_management_slack",
   "requiresAttributes": [
     {
@@ -227,7 +227,7 @@
   "networkMode": "awsvpc",
   "runtimePlatform": null,
   "cpu": "512",
-  "revision": 16,
+  "revision": 17,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
