@@ -41,4 +41,4 @@ console.log(`⚡️ Bolt app is running!: ${PORT}`);
 console.log(`env`)
 console.log(`USER_OAUTH_TOKEN: ${config.token}`)
 console.log(`SIGNING_SECRET: ${config.signingSecret}`)
-console.log(`APP_TOKEN: ${config.appToken}`)
+// console.log(`APP_TOKEN: ${config.appToken}`)
