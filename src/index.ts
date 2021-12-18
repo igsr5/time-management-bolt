@@ -7,27 +7,12 @@ import { times } from "./cmd/times";
 dotenv.config();
 const PORT = process.env.PORT || "3000";
 
-// const receiver = new ExpressReceiver({
-//   signingSecret: process.env.SIGNING_SECRET || "",
-//   endpoints: `/slack/events`,
-// });
-
-// const ping = () => {
-//   receiver.app.get(`/slack/ping`, (req, res) => {
-//     res.sendStatus(200)
-// 
-//     return;
-//   })
-// };
-// ping();
-
 const config = {
   token: process.env.BOT_USER_OAUTH_TOKEN,
   signingSecret: process.env.SIGNING_SECRET,
   appToken: process.env.APP_TOKEN,
   socketMode: true,
   logLevel: LogLevel.DEBUG,
-  // receiver,
 };
 
 const app = new App(config);
