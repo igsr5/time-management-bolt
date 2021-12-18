@@ -26,7 +26,7 @@ const config = {
   signingSecret: process.env.SIGNING_SECRET,
   // appToken: process.env.APP_TOKEN,
   // socketMode: true,
-  logLevel: "debug" as LogLevel,
+  logLevel: LogLevel.DEBUG,
   receiver,
 };
 
