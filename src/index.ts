@@ -24,10 +24,10 @@ ping();
 const config = {
   token: process.env.BOT_USER_OAUTH_TOKEN,
   signingSecret: process.env.SIGNING_SECRET,
-  appToken: process.env.APP_TOKEN,
-  socketMode: true,
+  // appToken: process.env.APP_TOKEN,
+  // socketMode: true,
   logLevel: "debug" as LogLevel,
-  // receiver,
+  receiver,
 };
 
 const app = new App(config);
