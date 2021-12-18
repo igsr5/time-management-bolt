@@ -27,7 +27,7 @@ const config = {
   appToken: process.env.APP_TOKEN,
   socketMode: true,
   logLevel: LogLevel.DEBUG,
-  receiver,
+  // receiver,
 };
 
 const app = new App(config);
