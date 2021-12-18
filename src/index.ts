@@ -1,4 +1,4 @@
-import { App, ExpressReceiver } from "@slack/bolt";
+import { App, ExpressReceiver, LogLevel } from "@slack/bolt";
 import dotenv from "dotenv";
 import { end } from "./cmd/end";
 import { start } from "./cmd/start";
@@ -26,7 +26,7 @@ const config = {
   signingSecret: process.env.SIGNING_SECRET,
   appToken: process.env.APP_TOKEN,
   socketMode: true,
-  logLevel: "debug",
+  logLevel: "debug" as LogLevel,
   // receiver,
 };
 
