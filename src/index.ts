@@ -24,7 +24,9 @@ ping();
 const config = {
   token: process.env.BOT_USER_OAUTH_TOKEN,
   signingSecret: process.env.SIGNING_SECRET,
-  receiver,
+  appToken: process.env.APP_TOKEN,
+  developerMode:true,
+  // receiver,
 };
 
 const app = new App(config);
