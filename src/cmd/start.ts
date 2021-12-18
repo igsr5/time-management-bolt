@@ -10,7 +10,7 @@ export const start = async ({
   respond,
 }: SlackCommandMiddlewareArgs) => {
   try {
-    await ack();
+    ack();
 
     Authenticate(command);
 
