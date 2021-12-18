@@ -6,7 +6,4 @@ COPY . .
 
 RUN yarn
 
-ENV PORT 80
-EXPOSE $PORT
-
 CMD ["yarn", "start"]
