@@ -24,8 +24,8 @@ ping();
 const config = {
   token: process.env.BOT_USER_OAUTH_TOKEN,
   signingSecret: process.env.SIGNING_SECRET,
-  // appToken: process.env.APP_TOKEN,
-  // socketMode: true,
+  appToken: process.env.APP_TOKEN,
+  socketMode: true,
   logLevel: LogLevel.DEBUG,
   receiver,
 };
@@ -41,4 +41,4 @@ console.log(`⚡️ Bolt app is running!: ${PORT}`);
 console.log(`env`)
 console.log(`USER_OAUTH_TOKEN: ${config.token}`)
 console.log(`SIGNING_SECRET: ${config.signingSecret}`)
-// console.log(`APP_TOKEN: ${config.appToken}`)
+console.log(`APP_TOKEN: ${config.appToken}`)
