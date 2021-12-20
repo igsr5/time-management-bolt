@@ -15,11 +15,6 @@ const config = {
   logLevel: LogLevel.DEBUG,
 };
 
-console.log(`env`)
-console.log(`USER_OAUTH_TOKEN: ${config.token}`)
-console.log(`SIGNING_SECRET: ${config.signingSecret}`)
-console.log(`APP_TOKEN: ${config.appToken}`)
-
 const app = new App(config);
 
 app.command("/start", start);
